@@ -6,9 +6,10 @@ export class ListTask extends Component {
   state = {
     checked: false
   }
-
-  handleChecked = () => this.setState({checked: !this.state.checked})
-  render(){
+  
+  handleChecked = () => this.setState({ checked: !this.state.checked })
+  
+  render() {
     return (
       <TouchableOpacity onPress={this.handleChecked} style={styles.listItem} >
         <CheckBox
